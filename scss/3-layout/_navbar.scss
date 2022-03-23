@@ -1,0 +1,148 @@
+nav {
+    .navbar {
+        padding-top: 40px;
+        position: relative;
+
+        .container {
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .brand {
+                height: 20px;
+                width: 110px;
+                background: transparent url("../images/logo.svg") no-repeat center;
+                background-size: contain;
+            }
+
+            .menu-toggler {
+                height: 20px;
+                width: 25px;
+                background: transparent url("../images/icon-hamburger.svg") no-repeat center;
+                background-size: contain;
+                border: none;
+            }
+
+            .menu-toggler.active {
+                background: transparent url("../images/icon-close.svg") no-repeat center;
+                background-size: contain;
+            }
+        }
+
+        .menu-section {
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(transparent, #000);
+            position: absolute;
+            top: 100px;
+            left: 0;
+            z-index: 10;
+
+            #menu {
+                width: 328px;
+                margin: 0 auto;
+                padding: 30px 0;
+                background-color: $menu-item-background;
+                border-radius: 5px;
+                text-align: center;
+    
+                .menu-item {
+                    a {
+                        color: $word-color-2;
+                        display: block;
+                        font-weight: 700;
+                        line-height: 2.5rem;
+                    }
+
+                    a:hover {
+                        color: $word-color-3;
+                    }
+                }
+            }
+        }
+
+        .CTA {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    nav {
+        .navbar {
+            .menu-section {
+                #menu {
+                    width: 536px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        .navbar {
+            .menu-section {
+                #menu {
+                    width: 704px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    nav {
+        .navbar {
+            width: 912px;
+            margin: 0 auto 120px;
+            padding-top: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .container {
+                width: auto;
+                margin: 0;
+
+                .brand {
+                    height: 26px;
+                    width: 150px;
+                }
+
+                .menu-toggler {
+                    display: none;
+                }
+            }
+
+            .menu-section {
+                min-height: 0;
+                width: 50%;
+                background: none;
+                display: flex;
+                position: static;
+
+                #menu {
+                    width: 100%;
+                    padding: 0;
+                    background: none;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+            .CTA {
+                display: block;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    nav {
+        .navbar {
+            width: 1120px;
+        }
+    }
+}

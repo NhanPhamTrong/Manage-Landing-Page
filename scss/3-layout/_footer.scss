@@ -1,0 +1,150 @@
+footer {
+    background-color: $footer-background;
+
+    .container {
+        padding-top: 50px;
+        display: grid;
+        place-items: center;
+
+        .inbox-update {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            input, button {
+                padding: 16px 28px;
+                border: none;
+                border-radius: 100px;
+                outline: none;
+            }
+
+            input {
+                width: 70%;
+            }
+
+            button {
+                width: 25%;
+                background-color: $button-background;
+                color: $word-color-1;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            button:hover {
+                background-color: $button-hover-background;
+            }
+
+            .warning {
+                color: red;
+                position: absolute;
+                bottom: -30px;
+                left: 28px;
+            }
+        }
+
+        .more-info {
+            width: 100%;
+            margin: 60px 0 35px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            li {
+                margin-bottom: 15px;
+                padding-left: 25%;
+
+                a {
+                    color: $word-color-1;
+                }
+
+                a:hover {
+                    color: $word-color-4;
+                }
+            }
+        }
+
+        .social-media {
+            width: 328px;
+            display: flex;
+            justify-content: space-around;
+            font-size: 2rem;
+
+            a {
+                color: $word-color-1;
+            }
+
+            a:hover {
+                color: $word-color-4;
+            }
+        }
+
+        .brand {
+            height: 30px;
+            width: 160px;
+            margin: 45px 0 50px;
+            background: transparent url("../images/logo copy.svg") no-repeat center;
+            background-size: contain;
+        }
+
+        .copyright {
+            color: $word-color-3;
+        }
+
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+    
+            a {
+                color: hsl(228, 45%, 44%);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    footer {
+        .container {
+            .inbox-update {
+                grid-column: 3;
+                grid-row: 1;
+            }
+
+            .more-info {
+                grid-column: 2;
+                grid-row: 1/3;
+
+                li {
+                    padding: 0;
+                }
+            }
+
+            .social-media {
+                grid-column: 1;
+                grid-row: 2;
+                justify-self: left;
+                width: 160px;
+                align-self: start;
+                justify-content: space-between;
+                font-size: 1.25rem;
+            }
+
+            .brand {
+                grid-column: 1;
+                grid-row: 1;
+                justify-self: left;
+            }
+
+            .copyright {
+                grid-column: 3;
+                grid-row: 2;
+                align-self: start;
+                justify-self: right;
+            }
+
+            .attribution {
+                grid-column: 1/4;
+                grid-row: 3;
+            }
+        }
+    }
+}

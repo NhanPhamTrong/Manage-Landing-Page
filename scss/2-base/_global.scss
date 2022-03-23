@@ -1,0 +1,80 @@
+body {
+    background: url("../images/bg-tablet-pattern.svg") no-repeat top right;
+    font-family: 'Roboto', sans-serif;
+
+    h1, h2, h3 {
+        color: $word-color-2;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        color: $word-color-3;
+        line-height: 2rem;
+    }
+
+    .container {
+        width: 328px;
+        margin: 0 auto;
+    }
+
+    .CTA {
+        padding: 16px 30px;
+        background-color: $button-background;
+        border: none;
+        border-radius: 100px;
+        box-shadow: 0 3px 10px 0 $button-background;
+        color: $word-color-1;
+        font-weight: 700;
+    }
+
+    .CTA:hover {
+        background-color: $button-hover-background;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        .container {
+            width: 536px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        .container {
+            width: 704px;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        h1 {
+            font-size: 3.25rem;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+        }
+
+        .container {
+            width: 912px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        .container {
+            width: 1120px;
+        }
+    }
+}

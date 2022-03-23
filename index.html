@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- FontAwesome and Title -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Manage landing page</title>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="container">
+          <a class="brand" href="#" aria-label="Brand"></a>
+          <button class="menu-toggler" type="button" onclick="OpenMenu()" aria-label="Menu toggler"></button>
+      </div>
+      <div class="menu-section">
+        <ul id="menu">
+          <li class="menu-item">
+              <a href="#">Pricing</a>
+          </li>
+          <li class="menu-item">
+              <a href="#">Product</a>
+          </li>
+          <li class="menu-item">
+              <a href="#">About Us</a>
+          </li>
+          <li class="menu-item">
+              <a href="#">Careers</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Community</a>
+          </li>
+        </ul>
+      </div>
+      <button class="CTA" type="button" aria-label="Get Started">Get Started</button>
+    </div>
+  </nav>
+
+  <main>
+    <div id="heading">
+      <div class="container">
+        <div class="illustration-intro"></div>
+        <div class="heading-text">
+          <h1>Bring everyone together to build better products.</h1>
+          <p>Manage makes it simple for software teams to plan day-to-day 
+            tasks while keeping the larger team goals in view.</p>
+          <button class="CTA" type="button" aria-label="Get Started">Get Started</button>
+        </div>
+      </div>
+    </div>
+    <div id="page-content">
+      <div class="container">
+        <div class="content-heading">
+          <h2>What's different about Manage?</h2>
+          <p>Manage provides all the functionality your team needs, without 
+            the complexity. Our software is tailor-made for modern digital 
+            product teams. </p>
+        </div>
+        <div class="content-text">
+          <div class="content-text-1">
+            <h3><span>01</span>Track company-wide progress</h3>
+            <p>See how your day-to-day tasks fit into the wider vision. Go from 
+              tracking progress at the milestone level all the way done to the 
+              smallest of details. Never lose sight of the bigger picture again.</p>
+          </div>
+          <div class="content-text-2">
+            <h3><span>02</span>Advanced built-in reports</h3>
+            <p>Set internal delivery estimates and track progress toward company 
+              goals. Our customisable dashboard helps you build out the reports 
+              you need to keep key stakeholders informed.</p>
+          </div>
+          <div class="content-text-3">
+            <h3><span>03</span>Everything you need in one place</h3>
+            <p>Stop jumping from one service to another to communicate, store files, 
+              track tasks and share documents. Manage offers an all-in-one team 
+              productivity solution.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="testimonial">
+      <div class="container">
+        <h2>What they've said</h2>
+        <div class="slider">
+          <ul></ul>
+          <ul></ul>
+          <div class="slider-btn">
+            <button type="button" aria-label="Slider button"></button>
+            <button type="button" aria-label="Slider button"></button>
+            <button type="button" aria-label="Slider button"></button>
+            <button type="button" aria-label="Slider button"></button>
+          </div>
+        </div>
+        <button class="CTA" type="button" aria-label="Get Started">Get Started</button>
+      </div>
+    </div>
+    <div id="simplify">
+      <div class="container">
+        <h1>Simplify how your team works today.</h1>
+        <button class="CTA" type="button" aria-label="Get Started">Get Started</button>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <div class="inbox-update">
+        <input type="text" placeholder="Updates in your inbox…">
+        <button type="button" onclick="CheckEmail()" aria-label="Go">Go</button>
+        <p class="warning">Please insert a valid email</p>
+      </div>
+      <ul class="more-info">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Pricing</a>
+        </li>
+        <li>
+          <a href="#">Products</a>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li>
+          <a href="#">Careers</a>
+        </li>
+        <li>
+          <a href="#">Community</a>
+        </li>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+      </ul>
+      <div class="social-media">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-square"></i></a>
+        <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <a class="brand" href="#" aria-label="Brand"></a>
+      <p class="copyright"></p>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
