@@ -14,7 +14,6 @@
 ### Challenge
 Users should be able to:
 - View the optimal layout for the component depending on thier device's screen size
-- See the hover state of images
 
 ### Screenshot!
 ![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)
